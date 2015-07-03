@@ -1,0 +1,309 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Simple Grid</title>
+        <meta name="description" content="A simple, easy-to-use 12-column responsive grid with some nice features.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <a href="https://github.com/johnpolacek/simple-grid/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+        <div class="wrapper">
+            <div class="grid-12 pad-3 m-pad-2 s-pad-1 l-pad-2-bottom">
+                <h1>Simple Grid</h1>
+                <p>A simple, easy-to-use 12-column responsive grid with some nice features. Built with <a href="https://github.com/johnpolacek/simple-grid-generator">Simple Grid Generator</a>.</p>
+            </div>
+
+            <div class="grid-12 pad-3-sides m-pad-2-sides s-pad-1-sides marg-3-bottom">
+                <div class="grid-1 m-grid-2 s-grid-3 pad-1"><small>grid-1 <br>m-grid-2 <br>s-grid-3</small></div>
+                <div class="grid-1 m-grid-2 s-grid-3 pad-1"><small>grid-1 <br>m-grid-2 <br>s-grid-3</small></div>
+                <div class="grid-1 m-grid-2 s-grid-3 pad-1"><small>grid-1 <br>m-grid-2 <br>s-grid-3</small></div>
+                <div class="grid-1 m-grid-2 s-grid-3 pad-1"><small>grid-1 <br>m-grid-2 <br>s-grid-3</small></div>
+                <div class="grid-1 m-grid-2 s-grid-3 pad-1"><small>grid-1 <br>m-grid-2 <br>s-grid-3</small></div>
+                <div class="grid-1 m-grid-2 s-grid-3 pad-1"><small>grid-1 <br>m-grid-2 <br>s-grid-3</small></div>
+                <div class="grid-1 m-grid-2 s-grid-3 pad-1"><small>grid-1 <br>m-grid-2 <br>s-grid-3</small></div>
+                <div class="grid-1 m-grid-2 s-grid-3 pad-1"><small>grid-1 <br>m-grid-2 <br>s-grid-3</small></div>
+                <div class="grid-1 m-grid-2 s-grid-3 pad-1"><small>grid-1 <br>m-grid-2 <br>s-grid-3</small></div>
+                <div class="grid-1 m-grid-2 s-grid-3 pad-1"><small>grid-1 <br>m-grid-2 <br>s-grid-3</small></div>
+                <div class="grid-1 m-grid-2 s-grid-3 pad-1"><small>grid-1 <br>m-grid-2 <br>s-grid-3</small></div>
+                <div class="grid-1 m-grid-2 s-grid-3 pad-1"><small>grid-1 <br>m-grid-2 <br>s-grid-3</small></div>
+            </div>
+            
+            <div class="grid-12 pad-3-sides m-pad-2-sides s-pad-1-sides">
+                <h2>Features</h2>
+            </div>
+            
+            <div class="grid-6 m-grid-12 s-grid-12 pad-3 m-pad-2 s-pad-1">
+                <h3>Responsive Overrides</h3>
+
+                <p>Set the default grid width, then override at different screen widths with breakpoint prefixes. Offset classes work this way also</p>
+
+                <pre><code>&lt;div class=&quot;grid-3 offset-4 m-grid-6 s-grid-12&quot;&gt;
+&lt;!-- 
+  Translates to: 
+  - Quarter width by default
+  - Half width at the medium breakpoint
+  - Full width at the small breakpoint
+--&gt;
+
+&lt;div class=&quot;grid-4 offset-6 s-grid-12 s-offset-0&quot;&gt;
+&lt;!-- 
+  Translates to: 
+  - Third width, offset to right half of the page
+  - Full width at the small breakpoint, no offset
+--&gt;
+
+</code></pre>
+            </div>
+
+            <div class="grid-6 m-grid-12 s-grid-12 pad-3 m-pad-2 s-pad-1">
+                <h3>Padding &amp; Margin Classes</h3>
+
+                <p>For quick, easy layouts, use the grid to set consistent padding and margin on all your elements (top, bottom, left, right, horizontal, vertical, all). </p>
+
+                <p>By default, there are 3 levels of padding/margin you can apply (or none).</p>
+
+                <pre class="pad-1"><code>/* For example... */
+.pad-0 { padding: 0; }
+.pad-1 { padding: 0.25em; }
+.pad-1-sides { padding-left: 0.5em; padding-right: 0.5em; }
+.pad-3-bottom { padding-bottom: 2em; }
+.marg-3-vertical { margin-top: 1em; margin-bottom: 1em; }</code></pre>
+
+                <p>Breakpoint prefixes can also be used to easily make layout adjustments for different screen widths.</p>
+
+                <pre><code>&lt;div class=&quot;pad-1 m-pad-1 s-pad-0&quot;&gt;</code></pre>
+            </div>
+            
+            <div class="grid-12 pad-3-sides m-pad-2-sides s-pad-1-sides pad-3-bottom">
+                <h2>Setting Up</h2>
+
+                <p>Do any of the following:</p>
+
+                <ul>
+                    <li>Simply put the contents of <code>grid.min.css</code> into your stylesheet</li>
+                    <li>If you have a CSS build process with minification and concatenation, include grid.css in your configuration.</li>
+                    <li>If using SASS, include the contents of the <code>/sass</code> directory in your project. Read below fo customization options.</li>
+                </ul>
+            </div>
+
+            <div class="grid-12 pad-3-sides m-pad-2-sides s-pad-1-sides pad-3-bottom">
+                <h2>Examples</h2>
+                <p>Resize your browser window to view breakpoint layout changes.</p>
+            </div>
+
+            <div class="grid-12 pad-3-sides m-pad-2-sides s-pad-1-sides pad-2-bottom marg-2-bottom">
+                <h3 class="marg-1-vertical">Padding</h3>
+                <div class="grid-3 bgr-lite pad-0">pad-0</div>
+                <div class="grid-3 bgr-lite pad-1">pad-1</div>
+                <div class="grid-3 bgr-lite pad-2">pad-2</div>
+                <div class="grid-3 bgr-lite pad-3">pad-3</div>
+            </div>
+
+            <div class="grid-12 pad-3-sides m-pad-2-sides s-pad-1-sides pad-2-bottom marg-2-bottom">
+                <div class="grid-6 l-grid-2 bgr-lite pad-2-sides">pad-2-sides</div>
+                <div class="grid-6 l-grid-2 bgr-lite pad-2-vertical">pad-2-vertical</div>
+                <div class="grid-6 l-grid-2 marg-2-vertical l-marg-0 bgr-lite pad-2-top">pad-2-top</div>
+                <div class="grid-6 l-grid-2 marg-2-vertical l-marg-0 bgr-lite pad-2-bottom">pad-2-bottom</div>
+                <div class="grid-6 l-grid-2 bgr-lite pad-2-left">pad-2-left</div>
+                <div class="grid-6 l-grid-2 bgr-lite pad-2-right text-right">pad-2-right</div>
+            </div>
+
+            <div class="grid-12 pad-3-sides m-pad-2-sides s-pad-1-sides pad-2-bottom marg-2-bottom">
+                <h3 class="marg-1-vertical">Responsive Padding</h3>
+                <div class="grid-12 bgr-lite pad-3 m-pad-2 s-pad-1">pad-3 m-pad-2 s-pad-1</div>
+            </div>
+
+            <div class="grid-12 pad-3-sides m-pad-2-sides s-pad-1-sides pad-2-bottom marg-2-bottom">
+                <h3 class="marg-1-vertical">Nesting</h3>
+                <div class="grid-12 bgr-lite pad-2">
+                    <div class="grid-4 bgr-lite pad-2">
+                        <div class="grid-12">grid-4</div>
+                        <div class="grid-12 pad-2 bgr-lite marg-1-top"></div>
+                    </div>
+                    <div class="grid-4 bgr-lite pad-2">
+                        <div class="grid-12">grid-4</div>
+                        <div class="grid-6 s-grid-12 pad-2 bgr-lite marg-1-top">
+                            <div class="grid-12 pad-2 bgr-lite"></div>
+                        </div>
+                        <div class="grid-6 s-grid-12 pad-2 bgr-lite marg-1-top">
+                            <div class="grid-12 pad-2 bgr-lite"></div>
+                        </div>
+                    </div>
+                    <div class="grid-4 bgr-lite pad-2">
+                        <div class="grid-12">grid-4</div>
+                        <div class="grid-12 pad-2 bgr-lite marg-1-top">
+                            <div class="grid-12 pad-2 bgr-lite"></div>
+                        </div>
+                        <div class="grid-6 s-grid-12 pad-2 bgr-lite marg-1-top">
+                            <div class="grid-12 pad-2 bgr-lite"></div>
+                        </div>
+                        <div class="grid-6 s-grid-12 pad-2 bgr-lite marg-1-top">
+                            <div class="grid-12 pad-2 bgr-lite"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-12 pad-3-sides m-pad-2-sides s-pad-1-sides pad-2-bottom marg-2-bottom">
+                <div class="grid-12 marg-1-vertical border-0">
+                    <h3>Responsive Nesting</h3>
+                </div>
+                
+                <div class="grid-12 bgr-lite pad-2 s-pad-0 border-0">
+                    <div class="grid-3 m-grid-6 s-grid-12 bgr-lite pad-2">
+                        <p>grid-3 m-grid-6 s-grid-12</p>
+                        <div class="grid-12 pad-2 bgr-lite marg-1-top"></div>
+                    </div>
+                    <div class="grid-3 m-grid-6 s-grid-12 bgr-lite pad-2">
+                        <p>grid-3 m-grid-6 s-grid-12</p>
+                        <div class="grid-6 pad-2 bgr-lite marg-1-top">
+                            <div class="grid-12 pad-2 bgr-lite"></div>
+                        </div>
+                        <div class="grid-6 pad-2 bgr-lite marg-1-top">
+                            <div class="grid-12 pad-2 bgr-lite"></div>
+                        </div>
+                    </div>
+                    <div class="grid-3 m-grid-6 s-grid-12 bgr-lite pad-2">
+                        <p>grid-3 m-grid-6 s-grid-12</p>
+                        <div class="grid-12 pad-2 bgr-lite marg-1-top">
+                            <div class="grid-12 pad-2 bgr-lite"></div>
+                        </div>
+                        <div class="grid-6 pad-2 bgr-lite marg-1-top">
+                            <div class="grid-12 pad-2 bgr-lite"></div>
+                        </div>
+                        <div class="grid-6 pad-2 bgr-lite marg-1-top">
+                            <div class="grid-12 pad-2 bgr-lite"></div>
+                        </div>
+                    </div>
+                    <div class="grid-3 m-grid-6 s-grid-12 bgr-lite pad-2">
+                        <p>grid-3 m-grid-6 s-grid-12</p>
+                        <div class="grid-12 pad-2 bgr-lite marg-1-top">
+                            <div class="grid-12 pad-2 bgr-lite"></div>
+                        </div>
+                        <div class="grid-4 pad-2 bgr-lite marg-1-top">
+                            <div class="grid-12 pad-2 bgr-lite"></div>
+                        </div>
+                        <div class="grid-4 pad-2 bgr-lite marg-1-top">
+                            <div class="grid-12 pad-2 bgr-lite"></div>
+                        </div>
+                        <div class="grid-4 pad-2 bgr-lite marg-1-top">
+                            <div class="grid-12 pad-2 bgr-lite"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="grid-12 marg-3-top marg-1-bottom border-0">
+                    <h3>Complex Responsive Nesting</h3>
+                </div>
+
+                <div class="grid-3 s-grid-12 pad-1 bgr-lite">
+                    <p class="marg-1-left border-0">grid-3 m-grid-2 s-grid-12</p>
+                    <div class="grid-12 l-grid-6 pad-1 marg-1-bottom"><div class="grid-12 pad-1 bgr-lite">grid-12 <br>l-grid-6</div></div>
+                    <div class="grid-12 l-grid-6 pad-1 marg-1-bottom"><div class="grid-12 pad-1 bgr-lite">grid-12 <br>l-grid-6</div></div>
+                    <div class="grid-12 l-grid-6 pad-1 marg-1-bottom"><div class="grid-12 pad-1 bgr-lite">grid-12 <br>l-grid-6</div></div>
+                    <div class="grid-12 l-grid-6 pad-1 marg-1-bottom"><div class="grid-12 pad-1 bgr-lite">grid-12 <br>l-grid-6</div></div>
+                    <div class="grid-12 l-grid-6 pad-1 marg-1-bottom"><div class="grid-12 pad-1 bgr-lite">grid-12 <br>l-grid-6</div></div>
+                    <div class="grid-12 l-grid-6 pad-1 marg-1-bottom"><div class="grid-12 pad-1 bgr-lite">grid-12 <br>l-grid-6</div></div>
+                    <div class="grid-12 l-grid-6 pad-1 marg-1-bottom"><div class="grid-12 pad-1 bgr-lite">grid-12 <br>l-grid-6</div></div>
+                    <div class="grid-12 l-grid-6 pad-1 marg-1-bottom"><div class="grid-12 pad-1 bgr-lite">grid-12 <br>l-grid-6</div></div>
+                </div>
+                <div class="grid-8 m-grid-9 s-grid-12 l-offset-1 pad-1-sides pad-2-vertical bgr-lite">
+                    <p class="marg-1-left border-0">grid-8 m-grid-9 s-grid-12 l-offset-1</p>
+                    <div class="grid-12 pad-1 border-0">
+                        <div class="grid-12 pad-1 bgr-lite">grid-12</div>
+                    </div>
+                    <div class="grid-6 m-grid-12 pad-1 border-0">
+                        <div class="grid-12 pad-1 bgr-lite">grid-6 <br>m-grid-12</div>
+                    </div>
+                    <div class="grid-6 m-grid-12 pad-1 border-0">
+                        <div class="grid-12 pad-1 bgr-lite">grid-6 <br>m-grid-12</div>
+                    </div>
+                    <div class="grid-6 m-grid-12 pad-1 border-0">
+                        <div class="grid-12 pad-1 bgr-lite">grid-6 <br>m-grid-12</div>
+                    </div>
+                    <div class="grid-6 m-grid-12 pad-1 border-0">
+                        <div class="grid-12 pad-1 bgr-lite">grid-6 <br>m-grid-12</div>
+                    </div>
+                    <div class="grid-12 pad-1 border-0">
+                        <div class="grid-12 pad-1 bgr-lite">grid-12</div>
+                    </div>
+                    <div class="grid-6 m-grid-3 m-grid-2 s-grid-12 pad-1 border-0">
+                        <div class="grid-12 pad-1 bgr-lite">grid-6 <br>m-grid-12 <br>l-grid-3</div>
+                    </div>
+                    <div class="grid-6 m-grid-3 m-grid-2 s-grid-12 pad-1 border-0">
+                        <div class="grid-12 pad-1 bgr-lite">grid-6 <br>m-grid-12 <br>l-grid-3</div>
+                    </div>
+                    <div class="grid-6 m-grid-3 m-grid-2 s-grid-12 pad-1 border-0">
+                        <div class="grid-12 pad-1 bgr-lite">grid-6 <br>m-grid-12 <br>l-grid-3</div>
+                    </div>
+                    <div class="grid-6 m-grid-3 m-grid-2 s-grid-12 pad-1 border-0">
+                        <div class="grid-12 pad-1 bgr-lite">grid-6 <br>m-grid-12 <br>l-grid-3</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-12 pad-3-sides m-pad-2 s-pad-1 pad-2-bottom marg-2-bottom">
+                <h3 class="marg-1-vertical">Offsets</h3>
+                <div class="grid-12">
+                    <div class="grid-4 offset-2 pad-2 bgr-lite">grid-4 offset-2</div>
+                </div>
+                 <div class="grid-12">
+                    <div class="grid-4 offset-4 pad-2 bgr-lite">grid-4 offset-4</div>
+                </div>
+                 <div class="grid-12">
+                    <div class="grid-4 offset-6 pad-2 bgr-lite">grid-4 offset-6</div>
+                </div>
+            </div>
+
+            <div class="grid-12 pad-3-sides m-pad-2 s-pad-1 pad-2-bottom marg-2-bottom">
+                <h3 class="marg-1-vertical">Responsive Offsets</h3>
+                <div class="grid-4 offset-8 m-grid-6 m-offset-6 s-grid-12 s-offset-0 pad-2 bgr-lite">grid-4 offset-8 <br>m-grid-6 m-offset-6 <br>s-grid-12 s-offset-0</div>
+            </div>
+
+            <div class="grid-12 pad-3 m-pad-2 s-pad-1">
+                <h2>Customize With Sass</h2>
+
+                <p>If you are familiar with Sass, you can use the <a href="https://github.com/johnpolacek/simple-grid-generator">Simple Grid Generator</a> mixin to set your own values for:</p>
+
+            </div>
+
+            <div class="grid-12 pad-2 m-pad-1 s-pad-1">
+                <div class="grid-4 pad-2 m-pad-1 s-pad-1">
+                    <h3>Number of Columns</h3>
+                    <p>Switch to a 18-column or 24-column grid instead.</p>
+                </div>
+                <div class="grid-4 pad-2 m-pad-1 s-pad-1">
+                    <h3>Breakpoints and Breakpoint Prefixes</h3>
+                    <p>Change the breakpoints, or add in more. Name the prefixes whatever you like xs-, xl-, etc.</p>
+                </div>
+                <div class="grid-4 pad-2 m-pad-1 s-pad-1">
+                    <h3>Padding and Margin Classes</h3>
+                    <p>Add more, take some away. Set the values however you like, px or em. Use only padding (no margin) or just remove them altogether.</p>
+                </div>
+            </div>
+
+            <div class="grid-12 pad-3-sides m-pad-2-sides s-pad-1-sides">
+                <p><strong>For more information, go to the <a href="https://github.com/johnpolacek/simple-grid-generator">Simple Grid Generator Project Page</a>.</strong></p>
+            </div>
+
+            <div class="grid-12 pad-3 m-pad-2 s-pad-1">
+                <h2>License</h2>
+                <p>Author &amp; copyright (c) 2015: <a href="http://johnpolacek.com">John Polacek</a>, Dual MIT &amp; GPL license</p>
+            </div>
+        </div>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-2821890-9','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
