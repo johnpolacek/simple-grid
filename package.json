@@ -1,0 +1,30 @@
+{
+  "name": "simple-grid",
+  "title": "Simple Grid",
+  "version": "1.0.0",
+  "description": "A simple 12-column responsive grid with some nice features.",
+  "main": "grid.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnpolacek/simple-grid-generator.git"
+  },
+  "keywords": [
+    "responsive",
+    "grid",
+    "sass",
+    "grid",
+    "generator"
+  ],
+  "author": {
+    "name": "John Polacek",
+    "url": "http://www.johnpolacek.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnpolacek/simple-grid/issues"
+  },
+  "homepage": "https://github.com/johnpolacek/simple-grid",
+  "files":[
+    "grid.css"
+  ]
+}
