@@ -2,6 +2,8 @@
 
 A simple, easy-to-use 12-column responsive grid with some nice features. Built with [Simple Grid Generator](https://github.com/johnpolacek/simple-grid-generator).
 
+For an example implementation, check out the [Expressive CSS Project Page](http://johnpolacek.github.io/expressive-css/).
+
 ##Features
 
 ###Responsive Overrides
@@ -35,6 +37,29 @@ Breakpoint prefixes can also be used to easily make layout adjustments for diffe
 ```
 <div class="pad-2 m-pad-1 s-pad-0">
 ```
+
+###Equal Height Grid Containers
+For responsive grid columns that have matching heights regardless of their inner content, use `.grid-flex`.
+
+```
+.grid-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+```
+Use this class on the parent grid container.
+
+```
+<div class="grid-12 grid-flex">
+	<div class="grid-12 m-grid-6 l-grid-3"></div>
+	<div class="grid-12 m-grid-6 l-grid-3"></div>
+	<div class="grid-12 m-grid-6 l-grid-3"></div>
+	<div class="grid-12 m-grid-6 l-grid-3"></div>
+</div>
+```
+
+*Note: this solution relies on Flexbox layout mode. Refer to [caniuse.com](http://caniuse.com/#feat=flexbox) for broswer support information. Browser prefixes removed for brevity.*
+
 
 ##Setting Up
 
